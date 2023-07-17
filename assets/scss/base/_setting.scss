@@ -1,0 +1,31 @@
+/*///// Font Setting /////*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
+body {
+    font-family: Roboto, 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+/*///// Color Setting /////*/
+/* Most Use Colors */
+$primary: #AA0601;
+$secondary: #650300;
+$red-1: #9F1213;
+$pink: #FBF2F2;
+$white: #ffffff;
+$black-1: #000000;
+$black-2: #0A0A0A; // 'share' text
+
+/* Gray Hue Colors */
+$gray-1: #F2F2F2; // pager next-page bg-color
+$gray-2: #ECECEC; // store-card border
+$gray-3: #DCDCDC; // nav border
+$gray-4: #DEE2E6; // product-card border
+$gray-5: #CED4DA; // drop-down box border
+$gray-6: #707070; // light small text
+$gray-7: #555555; // pager text & boder
+$gray-8: #495057; // drop-down box text
+$gray-9: #212529; // dark text
+
+/* Other Colors */
+$product-color-1: #5F3E2D;
+$product-color-2: #B75929;
