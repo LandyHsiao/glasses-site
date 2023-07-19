@@ -8,46 +8,11 @@
 </head>
 <body>
     <header class="l-header-area">
-        <nav class="b-common-nav u-main-frame u-df">
-            <h1 class="b-common-nav__title">Glasses</h1>
-            <ul class="b-common-nav__nab-bar u-df">
-                <li class="b-common-nav__nav-item"><a href="#">系列鏡框</a></li>
-                <li class="b-common-nav__nav-item"><a href="#">門市據點</a></li>
-                <li class="b-common-nav__nav-item"><a href="#">部落格</a></li>
-                <li class="b-common-nav__nav-item"><a href="#">常見問題</a></li>
-            </ul>
-        </nav>
+        <%- include('./layout/header_common-nav.ejs'); -%>
     </header>
     <main class="l-main-area">
-
+        this is main
     </main>
-    <footer class="l-footer-area">
-        <div class="b-footer-nav u-df u-main-frame">
-            <ul class="b-footer-nav__nav-bar u-df">
-                <li class="b-footer-nav__nav-item"><a href="#">首頁</a></li>
-                <li class="b-footer-nav__nav-item"><a href="#">系列鏡框</a></li>
-                <li class="b-footer-nav__nav-item"><a href="#">門市據點</a></li>
-                <li class="b-footer-nav__nav-item"><a href="#">部落格</a></li>
-                <li class="b-footer-nav__nav-item"><a href="#">常見問題</a></li>
-            </ul>
-            <ul class="b-footer-nav__social-links u-df">
-                <li class="b-footer-nav__icons"><a href="#"><img src="" alt="facebook連結"></a></li>
-                <li class="b-footer-nav__icons"><a href="#"><img src="" alt="instagram連結"></a></li>
-                <li class="b-footer-nav__icons"><a href="#"><img src="" alt="line連結"></a></li>
-            </ul>
-        </div>
-        <div class="b-footer-info u-main-frame">
-            <p class="b-footer-info__tel">0800-000-000</p>
-            <p class="b-footer-info__email">glasses@business.com</p>
-            <hr>
-            <p class="b-footer-info__bottom-wrap u-df">
-                <p class="b-footer-info__copyright">Copyright © 2020 Glasses.All rights reserved.</p>
-                <ul class="b-footer-info__policy-wrap u-df">
-                    <li class="b-footer-info__policy-links"><a href="#">隱私權政策</a></li>
-                    <li class="b-footer-info__policy-links"><a href="#">服務條款</a></li>
-                </ul>
-            </p>
-        </div>
-    </footer>
+    <%- include('./layout/footer.ejs'); -%>
 </body>
 </html>

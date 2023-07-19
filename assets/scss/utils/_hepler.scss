@@ -3,6 +3,15 @@
 }
 
 .u-main-frame {
-    width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
+}
+
+@media(max-width: 1360px) {
+    .u-main-frame {
+        max-width: 100%;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin: 0;
+    }
 }

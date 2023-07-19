@@ -1,0 +1,30 @@
+.l-header-area {
+    background: $primary;
+}
+
+.b-common-nav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-common-nav__title {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true');
+    background-size: 80px auto;
+    width: 80px;
+    height: 48.57px;
+}
+
+.b-common-nav__nav-item {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 64px;
+}
+
+// @media(max-width: 1295px) {
+
+// }

@@ -1,7 +1,8 @@
-/* BASE */
-@import url('./base/_reset.scss'); //meyer reset & my own reset
-@import url('./base/_setting.scss'); // font & color
-/* LAYOUT */
-@import url('./layout/_header.scss');
-/* UTILS */
-@import url('./utils/_hepler.scss'); // helpers
+
+@import 'base/reset';
+
+@import 'utils/setting';
+@import 'utils/hepler';
+
+@import 'components/header';
+@import 'components/footer';
