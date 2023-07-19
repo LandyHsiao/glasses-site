@@ -15,3 +15,16 @@
         margin: 0;
     }
 }
+
+@media(max-width: 767px) {
+    .u-main-frame {
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0;
+    }
+    .u-main-frame--no-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
