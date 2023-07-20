@@ -1,5 +1,5 @@
 .l-header-area {
-    background: $primary;
+    background-color: $primary;
 }
 
 .b-common-nav {
@@ -13,7 +13,8 @@
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true');
+    // background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true');
+    background-image: url('../image/logo-white.png'); // path start from all.scss
     background-size: 80px auto;
     width: 80px;
     height: 48.57px;
@@ -28,10 +29,35 @@
     }
 }
 
-// @media(max-width: 1295px) {
+.b-banner {
+    background-image: url('../image/home-header.png'); // path start from all.scss
+    background-size: cover;
+}
 
-// }
+.b-banner__content {
+    padding-top: 296px;
+    padding-bottom: 296px;
+    flex-direction: column;
+    align-items: flex-end;
+    color: $secondary;
+}
 
+.b-banner__sub-title {
+    font-size: 36px;
+}
+
+.b-banner__title {
+    font-size: 64px;
+    margin-bottom: 4px;
+}
+
+.b-banner__buy-link {
+    display: block;
+    background-color: $primary;
+    color: $white;
+    padding: 6px 12px;
+    font-size: 20px;
+}
 
 @media(max-width: 767px) {
     .b-common-nav {
@@ -59,5 +85,25 @@
             display: block;
             text-align: center;
         }
+    }
+
+    .b-banner {
+        background-image: url('../image/home-header-sm.png'); // path start from all.scss
+        // background-size: contain;
+    }
+
+    .b-banner__content {
+        padding-top: 144px;
+        padding-bottom: 144px;
+    }
+
+    .b-banner__sub-title {
+        font-size: 16px;
+    }
+    
+    .b-banner__title {
+        font-size: 24px;
+        margin-bottom: 8px;
+        font-weight: 700;
     }
 }
