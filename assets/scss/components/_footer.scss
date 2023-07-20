@@ -3,29 +3,28 @@
     padding: 60px 0 32px 0;
     color: #fff;
 }
-
-.b-footer-nav {
-    justify-content: space-between;
-    align-items: center;
+.b-footer-top {
+    flex-direction: column;
     margin-bottom: 24px;
 }
-
-.b-footer-nav__nav-bar {
-    // align-items: center;
+.b-footer-top__nav {
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.b-footer-nav__nav-item {
+// .b-footer-top__nav-bar {
+//     // align-items: center;
+// }
+
+.b-footer-top__nav-item {
     margin-right: 48px;
     &:last-child {
         margin-right: 0;
     }
 }
 
-// .b-footer-nav__social-links {
-//     //
-// }
-
-.b-footer-nav__icons {
+.b-footer-top__social-icon {
     margin-left: 32px;
     &:first-child {
         margin-left: 0;
@@ -35,31 +34,86 @@
     }
 }
 
-// .b-footer-info {
+// .b-footer-top__info {
     
 // }
 
 
-.b-footer-info__contact {
+.b-footer-top__contact {
     font-size: 36px;
     margin-bottom: 24px;
 }
 
-.b-footer-info__tel, .b-footer-info__email {
+.b-footer-top__tel, .b-footer-top__email {
+    align-items: center;
     margin-bottom: 8px;
 }
 
-.b-footer-info__hr {
+.b-footer-top__materail-icon {
+    font-size: 36px;
+    margin-right: 22px;
+}
+
+
+.b-footer-bottom__hr {
     margin-bottom: 32px;
 }
 
-.b-footer-info__bottom-wrap {
+.b-footer-bottom__wrap {
     justify-content: space-between;
 }
 
-.b-footer-info__policy-links {
+.b-footer-bottom__policy-links {
     margin-left: 48px;
     &:first-child {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1360px) {
+    .b-footer-nav__icons {
+        margin-left: 16px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .l-footer-area {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .b-footer-top {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .b-footer-top__nav-bar {
+        display: none;
+    }
+    .b-footer-top__social-icon {
+        margin-left: 8px;
+        img {
+            width: 24px;
+        }
+    }
+    .b-footer-top__contact {
+        font-size: 16px;
+    }
+    .b-footer-top__materail-icon {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    .b-footer-bottom__wrap {
+        flex-direction: column;
+    }
+    .b-footer-bottom__copyright {
+        margin-bottom: 8px;
+    }
+    .b-footer-bottom__policy-wrap {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .b-footer-bottom__policy-links {
         margin-left: 0;
     }
 }
