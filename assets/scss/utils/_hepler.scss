@@ -16,6 +16,13 @@
         padding-left: 36px;
         margin: 0;
     }
+
+    .u-main-frame--pad-no-px {
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+    }
 }
 
 /* Mobile */
@@ -26,7 +33,7 @@
         padding-left: 15px;
         margin: 0;
     }
-    .u-main-frame--no-px {
+    .u-main-frame--mobile-no-px {
         padding-left: 0;
         padding-right: 0;
     }

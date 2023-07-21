@@ -1,0 +1,30 @@
+.b-faq-content__category {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.b-faq-content__list-item {
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.b-faq-content__question {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Mobile */
+@media(max-width: 767px) {
+    .b-decoration-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .b-faq-content__list-item {
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,33 @@
+.l-main--decoration-title {
+    padding-top: 96px;
+    padding-bottom: 80px;
+}
+
+.l-main--product-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.b-decoration-title {
+    font-size: 48px;
+    font-weight: 700;
+    box-shadow: -8px 0 $red-1;
+    padding-left: 16px;
+    margin-left: 8px;
+    margin-bottom: 32px;
+}
+
+
+
+/* Mobile */
+@media(max-width: 767px) {
+    .l-main--decoration-title {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .l-main--product-title {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+}
