@@ -14,14 +14,13 @@
     
 }
 
-// .b-footer-top__nav-bar {
-//     // align-items: center;
-// }
-
 .b-footer-top__nav-item {
     margin-right: 48px;
     &:last-child {
         margin-right: 0;
+    }
+    &:hover {
+        color: $black-2;
     }
 }
 
@@ -35,14 +34,8 @@
     }
 }
 
-// .b-footer-top__info {
-    
-// }
-
-
 .b-footer-top__contact {
     font-size: 36px;
-    // margin-bottom: 24px;
 }
 
 .b-footer-top__tel, .b-footer-top__email {
@@ -68,6 +61,9 @@
     margin-left: 48px;
     &:first-child {
         margin-left: 0;
+    }
+    &:hover {
+        color: $black-2;
     }
 }
 

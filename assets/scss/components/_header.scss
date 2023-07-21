@@ -22,10 +22,13 @@
 
 .b-common-nav__nav-item {
     font-size: 20px;
-    color: #fff;
+    color: $white;
     margin-left: 64px;
     &:first-child {
         margin-left: 0;
+    }
+    &:hover {
+        color: $black-2;
     }
 }
 
@@ -58,7 +61,11 @@
     color: $white;
     padding: 6px 12px;
     font-size: 20px;
+    &:hover {
+        background-color: $black-2;
+    }
 }
+
 @media(max-width: 1360px) {
     .b-banner {
         background-image: url('../image/home-header-sm.png'); // path start from all.scss
@@ -66,6 +73,7 @@
         background-position: center;
     }
 }
+
 @media(max-width: 767px) {
     .b-common-nav {
         flex-direction: column;
@@ -86,7 +94,7 @@
     .b-common-nav__nav-item {
         margin: 0;
         width: 50%;
-        border: 1px solid #fff;
+        border: 1px solid $white;
         padding: 12px 0;
         a {
             display: block;
