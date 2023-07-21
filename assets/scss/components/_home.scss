@@ -7,3 +7,15 @@
 .b-contact-us__content {
     max-width: 636px;
 }
+
+@media(max-width: 992px) {
+    .b-contact-us__content {
+        max-width: 75%;
+    }
+}
+
+@media(max-width: 767px) {
+    .b-contact-us__content {
+        max-width: 100%;
+    }
+}
