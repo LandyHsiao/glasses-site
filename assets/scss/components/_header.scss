@@ -32,6 +32,7 @@
 .b-banner {
     background-image: url('../image/home-header.png'); // path start from all.scss
     background-size: cover;
+    background-position: center;
 }
 
 .b-banner__content {
@@ -58,7 +59,13 @@
     padding: 6px 12px;
     font-size: 20px;
 }
-
+@media(max-width: 1360px) {
+    .b-banner {
+        background-image: url('../image/home-header-sm.png'); // path start from all.scss
+        background-size: cover;
+        background-position: center;
+    }
+}
 @media(max-width: 767px) {
     .b-common-nav {
         flex-direction: column;
@@ -87,10 +94,11 @@
         }
     }
 
-    .b-banner {
-        background-image: url('../image/home-header-sm.png'); // path start from all.scss
-        // background-size: contain;
-    }
+    // .b-banner {
+    //     background-image: url('../image/home-header-sm.png'); // path start from all.scss
+    //     background-size: cover;
+    //     background-position: center;
+    // }
 
     .b-banner__content {
         padding-top: 144px;
