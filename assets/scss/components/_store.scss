@@ -1,0 +1,63 @@
+.b-dropdown-filter {
+    margin-bottom: 40px;
+    align-items: center;
+    max-width: calc((100% - 48px) / 3);
+}
+
+.b-dropdown-filter__text {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.b-dropdown-filter__dropdown {
+    border-radius: 0;
+    // width: 100%;
+    appearance: none;
+    display: block;
+}
+
+.b-store-list {
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.b-store-list__store {
+    max-width: calc((100% - 48px) / 3);
+}
+
+.b-store-list__name {
+    font-size: 24px;
+    padding: 8px 24px;
+    color: $gray-9;
+    border: 1px solid $gray-2;
+}
+
+.b-store-list__info {
+    padding: 16px 24px;
+    color: $gray-9;
+    font-size: 20px;
+    border: 1px solid $gray-2;
+    .material-icons-outlined {
+        margin-right: 11px;
+        font-size: 18px;
+    }
+}
+
+.b-store-list__info-item {
+    margin-bottom: 8px;
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+        align-items: baseline;
+    }
+}
+
+.b-store-list__detail {
+    display: block;
+    background-color: $black-1;
+    color: $white;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
