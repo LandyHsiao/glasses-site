@@ -10,6 +10,7 @@
 <body>
     <header class="l-header-area">
         <%- include('./layout/header_common-nav.ejs'); -%>
+        <%- include('./layout/header_blog-nav.ejs'); -%>
     </header>
     <main class="u-main-frame l-blog-article">
             <div class="l-blog-article__head">
@@ -24,7 +25,6 @@
                     <a href="" class="b-tag-short__tag">#event</a>
                 </div>
             </div>
-            
             <div class="l-blog-article__main u-df">
                 <div class="l-blog-article__content">
                     <div class="b-article-title">
@@ -59,47 +59,45 @@
                             讓彼此每一次睜開眼，都被愛的視線包圍!
                         </p>
                     </div>
-                    <div class="b-article-foot">
-                        <div class="b-article-foot__share-wrap u-df">
-                            <span class="b-article-foot__share-text">Share</span>
-                            <a href="#" class="b-article-foot__share-link"><img src="../assets/image/logo-facebook.png" alt="facebook icon" class="b-article-foot__share-link-img"></a>
-                            <a href="#" class="b-article-foot__share-link"><img src="../assets/image/logo-instagram.png" alt="instagram icon" class="b-article-foot__share-link-img"></a>
-                        </div>
-                        <hr class="b-article-foot__hr">
-                        <div class="b-article-foot__pager u-df">
-                            <a class="b-article-foot__page-item b-article-foot__pre u-df" href="#">
-                                <span class="material-icons-outlined">arrow_back</span>
-                                <span class="b-article-foot__page-text">上一篇：街頭潮人訪問 1</span>
-                            </a>
-                            <a class="b-article-foot__page-item b-article-foot__next u-df" href="#">
-                                <span class="b-article-foot__page-text">下一篇：街頭潮人訪問 2</span>
-                                <span class="material-icons-outlined">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </div>
-
                 <div class="l-blog-article__left-bar">
                     <div class="b-tag-block">
                         <div class="b-tag-block__title-wrap u-df">
                             <span class="b-tag-block__icon material-icons-outlined">label</span>
                             <div class="b-tag-block__text">TAGS</div>
-                            <div class="b-tag-block__tags">
-                                <a href="" class="b-tag-block__tag">#special</a>
-                                <a href="" class="b-tag-block__tag">#sale</a>
-                                <a href="" class="b-tag-block__tag">#new_item</a>
-                                <a href="" class="b-tag-block__tag">#interview</a>
-                                <a href="" class="b-tag-block__tag">#trivia</a>
-                                <a href="" class="b-tag-block__tag">#news</a>
-                                <a href="" class="b-tag-block__tag">#event</a>
-                            </div>
                         </div>
+                        <div class="b-tag-block__tags u-df">
+                            <a href="" class="b-tag-block__tag">#special</a>
+                            <a href="" class="b-tag-block__tag">#sale</a>
+                            <a href="" class="b-tag-block__tag">#new_item</a>
+                            <a href="" class="b-tag-block__tag">#interview</a>
+                            <a href="" class="b-tag-block__tag">#trivia</a>
+                            <a href="" class="b-tag-block__tag">#news</a>
+                            <a href="" class="b-tag-block__tag">#event</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-
-                
-        
+            <div class="b-article-foot">
+                <div class="b-article-foot__share-wrap u-df">
+                    <span class="b-article-foot__share-text">Share</span>
+                    <a href="#" class="b-article-foot__share-link"><img src="../assets/image/logo-facebook.png" alt="facebook icon" class="b-article-foot__share-link-img"></a>
+                    <a href="#" class="b-article-foot__share-link"><img src="../assets/image/logo-instagram.png" alt="instagram icon" class="b-article-foot__share-link-img"></a>
+                </div>
+                <hr class="b-article-foot__hr">
+                <div class="b-article-foot__pager u-df">
+                    <a class="b-article-foot__page-item b-article-foot__pre u-df" href="#">
+                        <span class="material-icons-outlined">arrow_back</span>
+                        <span class="b-article-foot__page-text">上一篇：街頭潮人訪問 1</span>
+                    </a>
+                    <a class="b-article-foot__page-item b-article-foot__next u-df" href="#">
+                        <span class="b-article-foot__page-text">下一篇：街頭潮人訪問 2</span>
+                        <span class="material-icons-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
     </main>
     <%- include('./layout/footer.ejs'); -%>
 </body>

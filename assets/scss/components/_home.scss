@@ -8,12 +8,14 @@
     max-width: 636px;
 }
 
+/* Pad */
 @media(max-width: 992px) {
     .b-contact-us__content {
         max-width: 75%;
     }
 }
 
+/* Mobile */
 @media(max-width: 767px) {
     .b-contact-us__content {
         max-width: 100%;

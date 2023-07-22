@@ -61,6 +61,7 @@
     background-color: $product-color-2;
 }
 
+/* Pad */
 @media(max-width: 992px) {
     .b-product-list {
         gap: 40px 24px;
@@ -71,6 +72,7 @@
     }
 }
 
+/* Mobile */
 @media(max-width: 767px) {
     .b-product-title {
         margin-bottom: 24px;
