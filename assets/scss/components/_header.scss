@@ -110,6 +110,14 @@
     background-image: url('../image/product-header-2.png');
 }
 
+.b-product-nav__banner-img--sunglasses-left {
+    background-image: url('../image/product-header-3.png');
+}
+.b-product-nav__banner-img--sunglasses-right {
+    background-image: url('../image/product-header-4.png');
+}
+
+
 /* Pad */
 @media(max-width: 992px) {
     .b-banner {
@@ -136,6 +144,12 @@
     }
     .b-product-nav__banner-img--optical-right {
         background-image: url('../image/product-header-sm-2.png');
+    }
+    .b-product-nav__banner-img--sunglasses-left {
+        background-image: url('../image/product-header-sm-3.png');
+    }
+    .b-product-nav__banner-img--sunglasses-right {
+        background-image: url('../image/product-header-sm-4.png');
     }
 }
 
