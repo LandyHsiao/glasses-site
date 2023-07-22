@@ -1,7 +1,6 @@
 .b-dropdown-filter {
     margin-bottom: 40px;
     align-items: center;
-    width: calc((100% - 48px) / 3);
 }
 
 .b-dropdown-filter__text {
@@ -10,9 +9,33 @@
 }
 
 .b-dropdown-filter__dropdown {
-    border-radius: 0;
-    appearance: none;
-    display: block;
+    width: 304px;
+    position: relative;
+    select {
+        border-radius: 0;
+        appearance: none;
+        display: block;
+        height: 38px;
+        width: 100%;
+        outline: none;
+        border: 1px solid $gray-5;
+        padding: 6px 12px;
+        padding-right: 0;
+        color: $gray-8;
+        font-size: 18px;
+    }
+    &:after {
+        content: '\e5c5';
+        font-family: 'Material Icons';
+        font-size: 24px;
+        position: absolute;
+        right: 12px;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        color: $black-1;
+        pointer-events: none;
+    }
 }
 
 .b-store-list {
@@ -70,12 +93,18 @@
     flex-direction: column;
 }
 
+/* Temporary use*/
+// .b-store-detail__map {
+//     width: calc((100% - 24px) * .6);
+//     background-color: $gray-6;
+//     text-align: center;
+//     color: $white;
+// }
+
 .b-store-detail__map {
     width: calc((100% - 24px) * .6);
-    background-color: $gray-6;
-    text-align: center;
-    color: $white;
-    
+    background-image: url(../image/map.png);
+    background-size: cover;
 }
 
 /* Pad */
@@ -104,7 +133,7 @@
 
     .b-store-detail__map {
         width: 100%;
-        height: 414px;
+        aspect-ratio: 746 / 414;
     }
 }
 
@@ -113,13 +142,18 @@
     .b-dropdown-filter {
         margin-bottom: 24px;
         width: 100%;
+        justify-content: space-between;
     }
     
     .b-dropdown-filter__text {
         font-size: 16px;
-        margin-right: 8px;
+        margin-right: 0;
     }
     
+    .b-dropdown-filter__dropdown {
+        width: calc(100% - 72px);
+    }
+
     .b-store-list__store {
         width: 100%;
     }
