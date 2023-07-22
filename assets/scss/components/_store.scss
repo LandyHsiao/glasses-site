@@ -1,7 +1,7 @@
 .b-dropdown-filter {
     margin-bottom: 40px;
     align-items: center;
-    max-width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
 .b-dropdown-filter__text {
@@ -11,7 +11,6 @@
 
 .b-dropdown-filter__dropdown {
     border-radius: 0;
-    // width: 100%;
     appearance: none;
     display: block;
 }
@@ -22,17 +21,17 @@
 }
 
 .b-store-list__store {
-    max-width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
-.b-store-list__name {
+.b-store-list__name, .b-store-detail__name {
     font-size: 24px;
     padding: 8px 24px;
     color: $gray-9;
     border: 1px solid $gray-2;
 }
 
-.b-store-list__info {
+.b-store-list__info, .b-store-detail__info {
     padding: 16px 24px;
     color: $gray-9;
     font-size: 20px;
@@ -43,7 +42,7 @@
     }
 }
 
-.b-store-list__info-item {
+.b-store-list__info-item, .b-store-detail__info-item {
     margin-bottom: 8px;
     align-items: center;
     &:last-child {
@@ -60,4 +59,75 @@
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.b-store-detail {
+    gap: 24px;
+}
+
+.b-store-detail__store-card {
+    width: calc((100% - 24px) * .4);
+    flex-direction: column;
+}
+
+.b-store-detail__map {
+    width: calc((100% - 24px) * .6);
+    background-color: $gray-6;
+    text-align: center;
+    color: $white;
+    
+}
+
+@media(max-width: 992px) {
+    .b-store-list {
+        gap: 24px;
+    }
+
+    .b-store-list__store {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .b-store-detail {
+        flex-direction: column;
+    }
+
+    .b-store-detail__store-card {
+        width: 100%;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .b-store-detail__photo {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .b-store-detail__map {
+        width: 100%;
+        height: 414px;
+    }
+}
+
+@media(max-width: 787px) {
+    .b-dropdown-filter {
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    
+    .b-dropdown-filter__text {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    
+    .b-store-list__store {
+        width: 100%;
+    }
+
+    .b-store-detail__store-card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .b-store-detail__photo {
+        width: 100%;
+    }
 }

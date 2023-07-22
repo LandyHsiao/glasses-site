@@ -1,0 +1,128 @@
+
+.b-blog-list__article {
+    position: relative;
+    gap: 24px;
+}
+
+.b-blog-list__full-link {
+    display: none;
+    // display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.b-blog-list__photo {
+    width: calc((100% - 24px) / 2);
+    // align-self: flex-start;
+    object-fit: cover;
+    object-position: center;
+}
+
+.b-blog-list__content {
+    width: calc((100% - 24px) / 2);
+    flex-direction: column;
+    // align-self: flex-start;
+}
+
+.b-blog-list__title {
+    color: $secondary;
+    font-size: 32px;
+}
+
+.b-blog-list__info-wrap {
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-blog-list__eng-title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.b-blog-list__date {
+    color: $gray-7;
+}
+
+.b-blog-list__preview {
+    color: $gray-7;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 20px;
+    white-space: pre-line;
+}
+
+.b-blog-list__link-more {
+    align-self: flex-end;
+    color: $secondary;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Pad */
+@media(max-width: 992px) {
+    .b-blog-list__photo {
+        aspect-ratio: 336 / 208;
+        align-self: flex-start;
+    }
+    .b-blog-list__content {
+        aspect-ratio: 336 / 208;
+    }
+    .b-blog-list__preview {
+        // display: block;
+        max-height: calc(100% - 64px);
+        white-space: normal;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        display: -webkit-inline-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .b-blog-list__title {
+        font-size: 24px;
+    }
+    .b-blog-list__info-wrap {
+        margin-bottom: 4px;
+    }
+    .b-blog-list__eng-title {
+        font-size: 16px;
+    }
+    .b-blog-list__preview {
+        font-size: 16px;
+    }
+    .b-blog-list__link-more {
+        color: $gray-7;
+        font-size: 16px;
+        font-weight: 400;
+        display: none;
+    }
+}
+
+/* Mobile */
+@media(max-width: 767px) {
+    .b-blog-list__article {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .b-blog-list__full-link {
+        display: block;
+    }
+    .b-blog-list__photo {
+        width: 100%;
+    }
+    .b-blog-list__content {
+        width: 100%;
+    }
+    .b-blog-list__preview {
+        display: none;
+    }
+    .b-blog-list__info-wrap {
+        margin-bottom: 0;
+    }
+}

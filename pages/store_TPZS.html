@@ -11,6 +11,33 @@
     <header class="l-header-area">
         <%- include('./layout/header_common-nav.ejs'); -%>
     </header>
+    <main class="u-main-frame l-main--decoration-title">
+        <h2 class="b-decoration-title">門市據點</h2>
+        <div class="b-dropdown-filter u-df">
+            <lable class="b-dropdown-filter__text" for="area-dropdown">選擇分店</lable>
+            <select name="store" id="store-dropdown" class="b-dropdown-filter__dropdown">
+                <option value="台北中山旗艦店">台北中山旗艦店</option>
+                <option value="台北綠園店">台北綠園店</option>
+                <option value="台中清水旗艦店">台中清水旗艦店</option>
+                <option value="高雄中正形象店">高雄中正形象店</option>
+                <option value="高雄夢時代店">高雄夢時代店</option>
+            </select>
+        </div>
+        <div class="b-store-detail u-df">
+            <div class="b-store-detail__store-card u-df">
+                <img src="../assets/image/store-1.png" alt="store photo" class="b-store-detail__photo">
+                <div class="b-store-detail__wrap">
+                    <p class="b-store-detail__name">台北中山旗艦店</p>
+                    <div class="b-store-detail__info">
+                        <div class="b-store-detail__info-item u-df"><span class="material-icons-outlined">call</span><span class="b-store-list__tel">電話：(02)000-1234</span></div>
+                        <div class="b-store-detail__info-item u-df"><span class="material-icons-outlined">schedule</span><span class="b-store-list__time">營業時間：10:00-21:00</span></div>
+                        <div class="b-store-detail__info-item u-df"><span class="material-icons-outlined">location_on</span><span class="b-store-list__addr">地址：台北市中山區南京東路25巷2-1號</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-store-detail__map">MAP API</div>
+        </div>
+    </main>
     <%- include('./layout/footer.ejs'); -%>
 </body>
 </html>
