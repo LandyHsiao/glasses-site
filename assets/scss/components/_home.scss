@@ -1,3 +1,41 @@
+// Intro Area
+.b-intro-area {
+    background-color: $pink;
+    color: $secondary;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.b-intro-area__section-title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.b-intro-area__feature-list {
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.b-intro-area__icon {
+    font-size: 80px;
+    text-align: center;
+    display: block;
+    margin-bottom: 28px;
+}
+
+.b-intro-area__sub-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.b-intro-area__text {
+    color: $black-1;
+}
+
 .b-contact-us {
     background-color: $pink;
     padding-top: 80px;
@@ -8,16 +46,123 @@
     max-width: 636px;
 }
 
+// Classic Glasses
+.b-classic-glasses {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.b-classic-glasses__section-title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: $secondary;
+}
+
+.b-classic-glasses__type-list {
+    gap: 24px;
+}
+
+.b-classic-glasses__type {
+    width: calc((100% - 48px) / 3);
+}
+
+.b-classic-glasses__full-link {
+    display: block;
+    width: 100%;
+}
+
+.b-classic-glasses__name {
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 48px;
+    color: $primary;
+    padding-top: 8px;
+    &:hover {
+        color: $white;
+        background-color: $secondary;
+    }
+}
+
+.b-classic-glasses__photo {
+    width: 100%;
+    aspect-ratio: 1;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    &:hover {
+        background-size: 120%;
+    }
+}
+
 /* Pad */
 @media(max-width: 992px) {
+    // Intro Area
+    .b-intro-area__feature-list {
+        flex-wrap: wrap;
+        gap: 36px 24px;
+    }
+
+    .b-intro-area__feature {
+        width: calc((100% - 24px) / 2);
+    }
+    
     .b-contact-us__content {
         max-width: 75%;
+    }
+
+    // Classic Glasses
+    .b-classic-glasses__type-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b-classic-glasses__type {
+        width: 50%;
     }
 }
 
 /* Mobile */
 @media(max-width: 767px) {
+    // Intro Aea
+    .b-intro-are {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .b-intro-area__section-title {
+        font-size: 24px;
+    }
+
+    .b-intro-area__feature-list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .b-intro-area__feature {
+        width:100%;
+    }
+    
     .b-contact-us__content {
         max-width: 100%;
+    }
+
+    // Classic Glasses
+    .b-classic-glasses {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .b-classic-glasses__section-title {
+        font-size: 24px;
+    }
+
+    .b-classic-glasses__type-list {
+    }
+
+    .b-classic-glasses__type {
+        width: 100%;
     }
 }

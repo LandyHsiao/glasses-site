@@ -22,7 +22,17 @@
 }
 
 .b-product-list__item--small {
-    max-width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
+}
+
+.b-product-list__product-link {
+    width: 100%;
+    display: block;
+}
+
+.b-product-list__product-img {
+    max-width: 100%;
+    display: block;
 }
 
 .b-product-list__info {
@@ -68,7 +78,7 @@
     }
 
     .b-product-list__item--small, .b-product-list__item--big {
-        max-width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 }
 
@@ -91,6 +101,6 @@
     }
 
     .b-product-list__item--small, .b-product-list__item--big {
-        max-width: 100%;
+        width: 100%;
     }
 }
