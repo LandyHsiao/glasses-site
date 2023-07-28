@@ -71,6 +71,9 @@
 .b-product-list__product-img {
     max-width: 100%;
     display: block;
+    &:hover {
+        filter: saturate(250%);;
+    }
 }
 
 .b-product-list__info {

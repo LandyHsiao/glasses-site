@@ -163,6 +163,22 @@
     }
 }
 
+.b-product-nav__nav-item:hover {
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: $gray-6;
+    a {
+        padding-bottom: 16px;
+    }
+}
+@include Pad {
+    .b-product-nav__nav-item:hover {
+        a {
+            padding-bottom: 16px;
+        }
+    }
+}
+
 .b-product-nav__nav-item--active {
     border-bottom-width: 8px;
     border-bottom-style: solid;

@@ -25,6 +25,14 @@
 @include Pad {
     .b-blog-list__full-link {
         display: block;
+        &:hover + .b-blog-list__photo {
+            filter: saturate(250%);
+        }
+        &:hover ~ .b-blog-list__content {
+            .b-blog-list__title {
+                color: $primary;
+            }
+        }
     }
 }
 @include Mobile {
@@ -146,6 +154,9 @@
     color: $secondary;
     font-size: 36px;
     font-weight: 700;
+    &:hover {
+        color: $primary;
+    }
 }
 @include Pad {
     .b-blog-list__link-more {

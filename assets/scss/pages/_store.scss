@@ -117,6 +117,9 @@
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
+    &:hover {
+        background-color: $secondary;
+    }
 }
 
 /* Single Store Page*/
