@@ -1,11 +1,25 @@
+/* Dropdown Box */
 .b-dropdown-filter {
     margin-bottom: 40px;
     align-items: center;
+}
+@include Mobile {
+    .b-dropdown-filter {
+        margin-bottom: 24px;
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .b-dropdown-filter__text {
     font-size: 24px;
     margin-right: 16px;
+}
+@include Mobile {
+    .b-dropdown-filter__text {
+        font-size: 16px;
+        margin-right: 0;
+    }
 }
 
 .b-dropdown-filter__dropdown {
@@ -37,14 +51,35 @@
         pointer-events: none;
     }
 }
+@include Mobile {
+    .b-dropdown-filter__dropdown {
+        width: calc(100% - 72px);
+    }
+}
 
+/* Stores */
 .b-store-list {
     flex-wrap: wrap;
     gap: 48px 24px;
 }
+@include Pad {
+    .b-store-list {
+        gap: 24px;
+    }
+}
 
 .b-store-list__store {
     width: calc((100% - 48px) / 3);
+}
+@include Pad {
+    .b-store-list__store {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@include Mobile {
+    .b-store-list__store {
+        width: 100%;
+    }
 }
 
 .b-store-list__name, .b-store-detail__name {
@@ -84,13 +119,43 @@
     padding-bottom: 16px;
 }
 
+/* Single Store Page*/
 .b-store-detail {
     gap: 24px;
+}
+@include Pad {
+    .b-store-detail {
+        flex-direction: column;
+    }
 }
 
 .b-store-detail__store-card {
     width: calc((100% - 24px) * .4);
     flex-direction: column;
+}
+@include Pad {
+    .b-store-detail__store-card {
+        width: 100%;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+@include Mobile {
+    .b-store-detail__store-card {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@include Pad {
+    .b-store-detail__photo {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@include Mobile {
+    .b-store-detail__photo {
+        width: 100%;
+    }
 }
 
 /* Temporary use*/
@@ -106,64 +171,9 @@
     background-image: url(../image/map.png);
     background-size: cover;
 }
-
-/* Pad */
-@media(max-width: 992px) {
-    .b-store-list {
-        gap: 24px;
-    }
-
-    .b-store-list__store {
-        width: calc((100% - 24px) / 2);
-    }
-
-    .b-store-detail {
-        flex-direction: column;
-    }
-
-    .b-store-detail__store-card {
-        width: 100%;
-        flex-direction: row;
-        gap: 24px;
-    }
-
-    .b-store-detail__photo {
-        width: calc((100% - 24px) / 2);
-    }
-
+@include Pad {
     .b-store-detail__map {
         width: 100%;
         aspect-ratio: 746 / 414;
-    }
-}
-
-/* Mobile */
-@media(max-width: 787px) {
-    .b-dropdown-filter {
-        margin-bottom: 24px;
-        width: 100%;
-        justify-content: space-between;
-    }
-    
-    .b-dropdown-filter__text {
-        font-size: 16px;
-        margin-right: 0;
-    }
-    
-    .b-dropdown-filter__dropdown {
-        width: calc(100% - 72px);
-    }
-
-    .b-store-list__store {
-        width: 100%;
-    }
-
-    .b-store-detail__store-card {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .b-store-detail__photo {
-        width: 100%;
     }
 }
