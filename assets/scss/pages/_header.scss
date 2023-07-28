@@ -23,7 +23,7 @@
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;background-image: url('../image/logo-white.png'); // path start from all.scss
-    background-size: cover;
+    background-size: contain;
     width: 80px;
     height: 48.57px;
     &:hover {
