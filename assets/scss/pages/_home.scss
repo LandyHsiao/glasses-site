@@ -1,9 +1,15 @@
-// Intro Area
+/* Intro Area */
 .b-intro-area {
     background-color: $pink;
     color: $secondary;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+@include Pad {
+    .b-intro-area {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .b-intro-area__section-title {
@@ -12,10 +18,39 @@
     font-weight: 700;
     margin-bottom: 32px;
 }
+@include Mobile {
+    .b-intro-area__section-title {
+        font-size: 24px;
+    }
+}
 
 .b-intro-area__feature-list {
     gap: 24px;
     justify-content: space-between;
+}
+@include Pad {
+    .b-intro-area__feature-list {
+        flex-wrap: wrap;
+        gap: 36px 24px;
+    }
+}
+@include Mobile {
+    .b-intro-area__feature-list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@include Pad {
+    .b-intro-area__feature {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@include Mobile {
+    .b-intro-area__feature {
+        width:100%;
+    }
 }
 
 .b-intro-area__icon {
@@ -36,10 +71,16 @@
     color: $black-1;
 }
 
-// Classic Glasses
+/* Classic Glasses */
 .b-classic-glasses {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+@include Mobile {
+    .b-classic-glasses {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .b-classic-glasses__section-title {
@@ -49,9 +90,20 @@
     margin-bottom: 32px;
     color: $secondary;
 }
+@include Mobile {
+    .b-classic-glasses__section-title {
+        font-size: 24px;
+    }
+}
 
 .b-classic-glasses__type-list {
     gap: 24px;
+}
+@include Pad {
+    .b-classic-glasses__type-list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .b-classic-glasses__type {
@@ -64,6 +116,16 @@
             color: $white;
             background-color: $secondary;
         }
+    }
+}
+@include Pad {
+    .b-classic-glasses__type {
+        width: 50%;
+    }
+}
+@include Mobile {
+    .b-classic-glasses__type {
+        width: 100%;
     }
 }
 
@@ -89,13 +151,25 @@
     background-position: center;
 }
 
-// Co-branding
+/* Co-branding */
 .b-co-branding {
     background-image: url('../image/index-bg.png');
     background-position: center;
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+@include Pad {
+    .b-co-branding {
+        background-image: url('../image/index-bg-md.png');
+    }
+}
+@include Mobile {
+    .b-co-branding {
+        background-image: url('../image/index-bg-sm.png');
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .b-co-branding__section-title {
@@ -105,8 +179,14 @@
     margin-bottom: 32px;
     color: $white;
 }
+@include Mobile {
+    .b-co-branding__section-title {
+        font-size: 24px;
+    }
+}
 
 .b-co-branding__type {
+    width: 50%;
     &:hover {
         .b-co-branding__photo {
             background-size: 110%;
@@ -117,6 +197,18 @@
         }
     }
 }
+@include Pad {
+    .b-co-branding__type {
+        width: 100%;
+    }
+}
+
+@include Pad {
+    .b-co-branding__list {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
 
 .b-co-branding__photo {
     width: 100%;
@@ -124,17 +216,25 @@
     background-position: center;
     aspect-ratio: 162 / 60;
 }
+@include Mobile {
+    .b-co-branding__photo {
+        aspect-ratio: 87 / 60;
+    }
+}
 
 .b-co-branding__photo--left {
     background-image: url('../image/home-section4-1.png');
 }
-
 .b-co-branding__photo--right {
     background-image: url('../image/home-section4-2.png');
 }
-
-.b-co-branding__type {
-    width: 50%;
+@include Mobile {
+    .b-co-branding__photo--left {
+        background-image: url('../image/home-section4-1-sm.png');
+    }
+    .b-co-branding__photo--right {
+        background-image: url('../image/home-section4-2-sm.png');
+    }
 }
 
 .b-co-branding_name {
@@ -147,10 +247,16 @@
     font-size: 48px;
 }
 
-// Recommended
+/* Recommend */
 .b-recommend {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+@include Mobile {
+    .b-recommend {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .b-recommend__section-title {
@@ -160,9 +266,24 @@
     margin-bottom: 32px;
     color: $secondary;
 }
+@include Mobile {
+    .b-recommend__section-title {
+        font-size: 24px;
+    }
+}
 
 .b-recommend__list {
     gap: 24px;
+}
+@include Pad {
+    .b-recommend__list {
+        flex-wrap: wrap;
+    }
+}
+@include Mobile {
+    .b-recommend__list {
+        flex-wrap: wrap;
+    }
 }
 
 .b-recommend__item {
@@ -170,6 +291,16 @@
     border-radius: 4px;
     box-shadow: 0 2px 6px $gray-4;
     min-height: 511px;
+}
+@include Pad {
+    .b-recommend__item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@include Mobile {
+    .b-recommend__item {
+        width: 100%;
+    }
 }
 
 .b-recommend__full-link {
@@ -187,7 +318,6 @@
     padding: 16px;
     flex-direction: column;
     justify-content: space-between;
-    // height: 40%;
     flex-grow: 2;
 }
 
@@ -201,7 +331,7 @@
 }
 
 
-// Contact Us
+/* Contact Us */
 .b-contact-us {
     background-color: $pink;
     padding-top: 80px;
@@ -212,6 +342,16 @@
     width: 50%;
     margin: 0 auto;
 }
+@include Pad {
+    .b-contact-us__content {
+        width: 75%;
+    }
+}
+@include Mobile {
+    .b-contact-us__content {
+        width: 100%;
+    }
+}
 
 .b-contact-us__title {
     color: $secondary;
@@ -220,10 +360,20 @@
     font-weight: 700;
     margin-bottom: 48px;
 }
+@include Mobile {
+    .b-contact-us__title {
+        font-size: 24px;
+    }
+}
 
 .b-contact-us__description {
     font-size: 20px;
     margin-bottom: 24px;
+}
+@include Mobile {
+    .b-contact-us__description {
+        font-size: 16px;
+    }
 }
 
 .b-contact-us__area {
@@ -252,6 +402,11 @@
 .b-contact-us__policy-area {
     margin-bottom: 48px;
 }
+@include Mobile {
+    .b-contact-us__policy-area {
+        margin-bottom: 24px;
+    }
+}
 
 .b-contact-us__input-policy {
     outline: none;
@@ -274,159 +429,19 @@
     line-height: 1.5;
     padding: 16px 0;
 }
+@include Mobile {
+    .b-contact-us__input-submit {
+        width: 100%;
+    }
+}
 
 /* Pad */
 @media(max-width: 992px) {
     // Intro Area
-    .b-intro-area__feature-list {
-        flex-wrap: wrap;
-        gap: 36px 24px;
-    }
-
-    .b-intro-area__feature {
-        width: calc((100% - 24px) / 2);
-    }
     
-    .b-contact-us__content {
-        max-width: 75%;
-    }
 
-    // Classic Glasses
-    .b-classic-glasses__type-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .b-classic-glasses__type {
-        width: 50%;
-    }
-
-    // Co-branding
-    .b-co-branding {
-        background-image: url('../image/index-bg-md.png');
-    }
-
-    .b-co-branding__list {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .b-co-branding__type {
-        width: 100%;
-    }
-
-    // Recommend
-    .b-recommend__list {
-        flex-wrap: wrap;
-    }
-
-    .b-recommend__item {
-        width: calc((100% - 24px) / 2);
-    }
-
-    // Contact Us
-    .b-contact-us__content {
-        width: 75%;
-    }
-}
-
-/* Mobile */
-@media(max-width: 767px) {
-    // Intro Aea
-    .b-intro-are {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .b-intro-area__section-title {
-        font-size: 24px;
-    }
-
-    .b-intro-area__feature-list {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .b-intro-area__feature {
-        width:100%;
-    }
     
-    .b-contact-us__content {
-        max-width: 100%;
-    }
-
-    // Classic Glasses
-    .b-classic-glasses {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .b-classic-glasses__section-title {
-        font-size: 24px;
-    }
-
-    .b-classic-glasses__type {
-        width: 100%;
-    }
-
-    // Co-branding
-    .b-co-branding {
-        background-image: url('../image/index-bg-sm.png');
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .b-co-branding__section-title {
-        font-size: 24px;
-    }
-
-    .b-co-branding__photo {
-        aspect-ratio: 87 / 60;
-    }
-
-    .b-co-branding__photo--left {
-        background-image: url('../image/home-section4-1-sm.png');
-    }
-
-    .b-co-branding__photo--right {
-        background-image: url('../image/home-section4-2-sm.png');
-    }
-
-    // Recommended
-    .b-recommend {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .b-recommend__section-title {
-        font-size: 24px;
-    }
-
-    .b-recommend__list {
-        flex-wrap: wrap;
-    }
-
-    .b-recommend__item {
-        width: 100%;
-    }
-
-    // Contact Us
-    .b-contact-us__content {
-        width: 100%;
-    }
     
-    .b-contact-us__title {
-        font-size: 24px;
-    }
+    
 
-    .b-contact-us__description {
-        font-size: 16px;
-    }
-    
-    .b-contact-us__policy-area {
-        margin-bottom: 24px;
-    }
-    
-    .b-contact-us__input-submit {
-        width: 100%;
-    }
 }

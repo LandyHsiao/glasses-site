@@ -1,3 +1,15 @@
+@mixin Pad {
+    @media(max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin Mobile {
+    @media(max-width: 767px) {
+        @content;
+    }
+}
+
 .u-df {
     display: flex;
 }
